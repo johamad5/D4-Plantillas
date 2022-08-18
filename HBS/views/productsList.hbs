@@ -1,0 +1,21 @@
+{{> navbar}}
+<br/>
+
+<h1>Nuestros productos</h1>
+{{#if exists}}
+    <div class="catalog">
+        {{#each products}}
+            <div class="product">
+                <img class="productImage" src="{{this.thumbnail}}" alt="Imagen del producto">
+                <p>{{this.id}}</p>
+                <p>{{this.title}}</p>
+                <p>$ {{this.price}}</p>
+            </div>
+        {{/each}}       
+            <a href="http://localhost:8080/form">Agregar un producto al Stock</a>
+    </div>
+{{else}}
+    <p>No hay productos!</p>
+    <a href="http://localhost:8080/form">Agregar un producto</a>
+{{/if}}
+{{> footer}}

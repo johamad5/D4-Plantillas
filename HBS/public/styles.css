@@ -1,0 +1,52 @@
+.footer,
+.header {
+  background-color: #3a3a3a;
+  padding: 25px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.header li a {
+  text-decoration: none;
+  color: azure;
+  margin-left: 10px;
+}
+
+.header li a:hover {
+  background-color: whitesmoke;
+  color: #3a3a3a;
+}
+
+.productImage {
+  max-width: 30%;
+}
+
+h1 {
+  font-family: 'Lucida Console', 'Courier New', monospace;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  text-align: center;
+}
+
+form input {
+  margin: 2px 20px;
+}
+
+.addButton,
+button {
+  background-color: #3a3a3a;
+  padding: 5px 10px;
+  color: whitesmoke;
+  margin: 10px;
+  border: 1px solid transparent;
+}
+
+.addButton:hover,
+button:hover {
+  background-color: transparent;
+  color: #3a3a3a;
+  border: 1px solid #3a3a3a;
+}

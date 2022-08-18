@@ -1,0 +1,24 @@
+html
+    head
+        title='Desafio Pug'
+        style
+            include styles.css
+    body
+        h1=title 
+        div
+            form(action="/products" method="post")
+                label(for="title")='Nombre'
+                br
+                input(type="text" id="title" name="title")
+                br
+                label(for="price")='Precio'
+                br
+                input(type="text" id="price" name="price")
+                br
+                label(for="thumbnail")='Foto'
+                br
+                input(type="url" id="thumbnail" name="thumbnail")
+                br
+                input(type="submit" class= 'addButton' value="Agregar!")
+                br
+            a(href="http://localhost:8080/products")='Ver todos los productos'
